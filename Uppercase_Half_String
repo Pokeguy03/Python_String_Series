@@ -1,0 +1,3 @@
+s="Pokemon"
+n=len(s)//2
+print(s[:n].upper()+s[n:])   
