@@ -1,3 +1,8 @@
+
+from collections import defaultdict
+a="grammar"
+b="Grauist"
+k=3
 dic=defaultdict(int)
 for i in a:
     dic[i]+=1
