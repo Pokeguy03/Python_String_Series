@@ -22,4 +22,22 @@ class Solution:
                 break
            
         return -1
+
+
+For finding the k th element:
+from collections import Counter
+
+class Solution:
+    def kthUniqChar(self, s: str, k: int) -> int:
+        freq = Counter(s)
+        count = 0
+
+        for i in range(len(s)):
+            if freq[s[i]] == 1:
+                count += 1
+                if count == k:
+                    return i
+
+        return -1
+
         
